@@ -1,0 +1,190 @@
+.vote {
+  z-index: 998;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .toast-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+    .toast-text {
+      height: 35px;
+      display: inline-block;
+      line-height: 35px;
+      background-color: orange;
+      z-index: 10;
+      padding: 0 10px;
+      color: #fff;
+    }
+  }
+  .vote-header {
+    padding: 15px 0 15px 20px;
+    .awards-manage, .awards-list {
+      font-size: 16px;
+    }
+    .awards-list {
+      margin-top: 15px;
+    }
+  }
+  .vote-center {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 20px 15px 20px;
+    #vote-table {
+      width: 100%;
+      text-align: center;
+      th,td {
+        color: #676767;
+        border: 1px solid #e5e5e5;
+      }
+      th,td {
+        height: 36px;
+        line-height: 36px;
+      }
+      .probability-list {
+        width: 28%;
+        height: 40px;
+        cursor: pointer;
+        line-height: 40px;
+        border: 0;
+      }
+      .hide {
+        display: none;
+      }
+      .vote-table-editor, .vote-table-save, .vote-table-delete {
+        border: none;
+        font-size: 17px;
+        cursor: pointer;
+        .inner {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .bg {
+            width: 51px;
+            height: 24px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 2px;
+            border: none;
+            background-color: #e17371;
+          }
+          .hide {
+            display: none;
+          }
+        }
+      }
+    }
+    .vote-add {
+      margin-top: 15px;
+    }
+  }
+  .vote-footer {
+    padding: 15px 160px 0 20px;
+    .vote-footer-top {
+      display: flex;
+      flex-direction: row;
+      .vote-footer-input,.vote-footer-turntable {
+        display: flex;
+      }
+      .vote-footer-input {
+        display: flex;
+        flex-direction: row;
+        flex: 2;
+        form {
+          display: block;
+          width: 100%;
+          .input {
+            display: flex;
+            flex: 1;
+            margin-bottom: 10px;
+            .des {
+              display: flex;
+              flex: 1;
+            }
+            .cnt {
+              display: flex;
+              flex: 3;
+              input {
+                width: 220px;
+                height: 21px;
+                font-size: 16px;
+                padding-left: 10px;
+                border-radius: 2px;
+                border: 1px solid #e8e8e8;
+              }
+              .add-think {
+                width: 120px;
+                height: 25px;
+                padding: 0;
+                cursor: pointer;
+                margin-left: 20px;
+                border-radius: 2px;
+                background-color: #f7f7f7;
+              }
+            }
+          }
+          .manager-detail {
+            color: #676767;
+            li {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+      .vote-footer-turntable {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .turntable {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 180px;
+            height: 180px;
+          }
+        }
+        .add-cnt {
+          padding-top: 15px;
+          display: flex;
+          justify-content: center;
+          input {
+            width: 110px;
+            height: 30px;
+            color: #fff;
+            background-color: #46b250;
+            font-size: 16px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid #e8e8e8;
+          }
+        }
+        img, input {
+          cursor: pointer;
+        }
+      }
+    }
+    .vote-footer-bottom {
+       display: flex;
+       padding: 10px 0 15px 0;
+       justify-content: center;
+       input {
+        width: 120px;
+        height: 35px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #46b250;
+        font-size: 18px;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: 1px solid #e8e8e8;
+      }
+    }
+  }
+}

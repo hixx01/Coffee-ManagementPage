@@ -1,0 +1,189 @@
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #e7e8eb;
+}
+
+.doc {
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 65px;
+  border-top: 5px solid #44b549;
+  line-height: 50px;
+  background-color: #fff;
+  position: relative;
+  color: #3b3b3b;
+  box-sizing: border-box;
+  .user-name {
+    float: right;
+    color: #3b3b3b;
+    margin-right: 30px;
+    line-height: 60px;
+  }
+}
+
+.doc {
+  .content-wrap {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    position: relative;
+    border: 1px solid #d9dabc;
+    background-color: #fff;
+    display: table;
+    .vote-shadow {
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      position: absolute;
+      background: rgba(0,0,0,0.6);
+      .vote-dialog {
+        width: 300px;
+        height: 250px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1001;
+        position: absolute;
+        background-color: #fff;
+        .vote-dialog-top {
+          width: 100%;
+          height: 50px;
+          background-color: #44b549;
+          .prompt-message, .top-close {
+            display: flex;
+            flex: 1;
+            width: 40%;
+            height: 50px;
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            line-height: 50px;
+          }
+          .prompt-message {
+            padding-left: 20px;
+          }
+          .top-close {
+            padding-left: 20px;
+            text-align: right;
+            input {
+              width: 40px;
+              height: 40px;
+              color: #fff;
+              font-size: 18px;
+              cursor: pointer;
+              border: none;
+              background-color: #44b549;
+            }
+          }
+        }
+        .vote-dialog-center {
+          width: 100%;
+          cursor: pointer;
+          text-align: center;
+          line-height: 150px;
+          background-color: #fff;
+          height: 150px;
+          font-size: 20px;
+          color: #ea2634;
+        }
+        .vote-dialog-footer {
+          width: 100%;
+          height: 50px;
+          background-color: #ccc;
+          input {
+            width: 49%;
+            cursor: pointer;
+            border: 0;
+            height: 50px;
+            color: #fff;
+            background-color: #ccc;
+          }
+          .vote-confirm {
+            background-color: #44b549;
+          }
+          .vote-confirm:hover {
+            color: #000;
+            font-weight: bold;
+          }
+          .vote-cancel {
+            color: #000;
+          }
+          .vote-cancel:hover {
+            color: #ea2634;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .hide {
+      display: none;
+    }
+    .navigation {
+      width: 210px;
+      height: 1000px;
+      position: relative;
+      background-color: #fff;
+      display: table-cell;
+      border-right: 1px solid #e7e8eb;
+      .nav-item {
+        border-bottom: 1px solid #e7e7eb;
+        .nav-item-content {
+          width: 100%;
+          display: inline-block;
+
+          .nav-item-title {
+            color: #8d8d8d;
+            height: 35px;
+            line-height: 35px;
+            padding-left: 20px;
+            .icon-wrap {
+              display: inline-block;
+              vertical-align: top;
+              height: 35px;
+              width: 35px;
+              i.iconfont {
+                color: #b2b2b2;
+              }
+            }
+          }
+
+          .nav-item-sub-list {
+            width: 100%;
+            .nav-item-sub-item {
+              color: #010101;
+              height: 35px;
+              line-height: 35px;
+              padding-left: 60px;
+              cursor: pointer;
+              &.active {
+                background-color: #44b549;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content {
+      position: relative;
+      height: 1000px;
+      background-color: #fff;
+      display: table-cell;
+      width: 990px;
+      z-index: 1;
+      vertical-align: top;
+    }
+  }
+}

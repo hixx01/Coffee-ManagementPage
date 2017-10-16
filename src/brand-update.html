@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>品牌上传</title>
+    <link rel="stylesheet" href="./css/brand-update.css">
+</head>
+<body>
+
+    <div class="mask">
+        <div class="login-dialog">
+            <div class="login-dialog-header"></div>
+            <div class="login-dialog-content">
+                <div class="form-item form-user-name">
+                    <span class="form-text">账号:</span>
+                    <input class="form-input user-name-input" type="text">
+                </div>
+                <div class="form-item form-user-password">
+                    <span class="form-text">密码:</span>
+                    <input class="form-input password-input" type="password">
+                </div>
+                <div class="login-btn-wrap">
+                    <button class="btn">登陆</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-inner">
+            <span class="header-title">品牌上传</span>
+        </div>
+    </header>
+    <div class="content">
+        <div class="form-wrap">
+            <div class="form-left-content">
+                <div class="form-item form-brand-name">
+                    <span class="form-text">品牌名称:</span>
+                    <input class="form-input" type="text" placeholder="最多输入20个字符">
+                </div>
+
+                <div class="form-item form-company-name">
+                    <span class="form-text">公司全称:</span>
+                    <input class="form-input" type="text" placeholder="最多输入20个字符">
+                </div>
+
+                <div class="form-item form-company-short-name">
+                    <span class="form-text">公司简称:</span>
+                    <input class="form-input" type="text" placeholder="最多输入10个字符">
+                </div>
+
+                <div class="form-item form-company-category">
+                    <span class="form-text">公司类别:</span>
+                    <select class="sel">
+                        <option value="0">请选择</option>
+                        <option value="1">互联网</option>
+                        <option value="2">其他</option>
+                    </select>
+                    <input class="form-input disabled" disabled="disabled" type="text" value="请选择">
+                </div>
+
+                <div class="form-item form-company-year">
+                    <span class="form-text">成立年份:</span>
+                    <input class="form-input" type="text">
+                </div>
+
+                <div class="form-item form-company-city">
+                    <span class="form-text">总部所在城市:</span>
+                    <input class="form-input" type="text">
+                </div>
+
+                <div class="form-item form-company-address">
+                    <span class="form-text">总部地址:</span>
+                    <input class="form-input" type="text"  placeholder="最多输入50个字符">
+                </div>
+
+                <div class="form-item form-company-post">
+                    <span class="form-text">邮编:</span>
+                    <input class="form-input" type="text">
+                </div>
+
+                <div class="form-item form-company-phone">
+                    <span class="form-text">公司电话:</span>
+                    <input class="form-input" type="text">
+                </div>
+
+                <div class="form-item form-company-fax">
+                    <span class="form-text">公司传真:</span>
+                    <input class="form-input" type="text">
+                </div>
+
+                <div class="form-item form-export-email">
+                    <span class="form-text">接受中奖数据邮箱:</span>
+                    <input class="form-input" type="text">
+                </div>
+            </div>
+
+            <div class="form-right-content">
+                <div class="form-item logo-upload-wrap">
+                    <span class="form-text">logo上传:</span>
+                    <div class="logo-upload-inner">
+                        <div class="no-update">
+                            <i class="iconfont icon-tianjia1"></i>
+                            <p class="update-tip">建议上传正方形图片</p>
+                        </div>
+                        <div class="img-show">
+                            <img >
+                        </div>
+                        <input class="update-input" type="file">
+                    </div>
+                </div>
+
+                <div class="form-item form-company-summary">
+                    <span class="form-text">产品摘要:</span>
+                    <div class="textarea-wrap">
+                        <textarea class="form-textarea"></textarea>
+                        <div class="word-cnt-wrap">
+                            <span class="word-cnt-block">
+                                <span class="cur-text">1</span>
+                                <span>/</span>
+                                <span>50</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-item form-company-detail">
+                    <span class="form-text">产品详情:</span>
+                    <div class="textarea-wrap">
+                        <textarea class="form-textarea"></textarea>
+                        <div class="word-cnt-wrap">
+                            <span class="word-cnt-block">
+                                <span class="cur-text">1</span>
+                                <span>/</span>
+                                <span>500</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit-wrap">
+            <button class="btn">提交</button>
+        </div>
+    </div>
+
+    <div class="toast-wrap">
+        <span class="toast-text"></span>
+    </div>
+</body>
+<script src="./js/lib/jquery-2.1.4.min.js"></script>
+<script src="./js/brandUpdate.js"></script>
+</html>

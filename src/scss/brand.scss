@@ -1,0 +1,143 @@
+.brand{
+  .clearfix:before,.clearfix:after{
+    display:table;
+    content:"";
+  }
+  .clearfix:after{
+    clear:both;
+  }
+  .clearfix{
+    *zoom:1
+  }
+  .brand-header{
+    width: 990px;
+    height: 104px;
+    border-bottom: 1px solid #e7e8eb;
+    .brand-manage{
+      padding-left: 23px;
+      padding-top: 23px;
+    }
+    .all-brand{
+      padding-left: 30px;
+      padding-top: 18px;
+    }
+  }
+  .classification-query{
+    width: 989px;
+    height: 53px;
+    border-bottom: 1px solid #e7e8eb;
+    .classification-select{
+      width: 175px;
+      height: 32px;
+      margin-top: 10px;
+      margin-left: 35px;
+    }
+    .search-box{
+      width: 207px;
+      height: 32px;
+      float: right;
+      margin-top: 10px;
+      border: 1px solid #e7e8eb;
+      margin-right: 48px;
+      input{
+        display: block;
+        width: 175px;
+        height: 30px;
+        border: none;
+        border-right: 1px solid #e7e8eb;
+        float: left;
+      }
+      i.iconfont{
+        padding-left: 8px;
+        line-height: 32px;
+      }
+    }
+  }
+  .brand-display{
+    position: relative;
+    .brand-all-show{
+      .specific-brand{
+        width: 247px;
+        height: 207px;
+        border: 1px solid #e7e8eb;
+        float: left;
+        margin-top: 30px;
+        margin-left: 60px;
+        .brand-link{
+          display: block;
+          .brand-logo{
+            img{
+              display: block;
+              width: 247px;
+              height: 177px;
+            }
+          }
+          .brand-info{
+            width: 247px;
+            height: 30px;
+            background-color: #998e82;
+            span{
+              color: #fff;
+              font-size: 16px;
+              display: block;
+              line-height: 30px;
+            }
+            .brand-name{
+              float: left;
+              padding-left: 37px;
+              width: 110px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow:ellipsis
+            }
+            .brand-ballot{
+              float: right;
+              padding-right: 37px;
+            }
+          }
+        }
+      }
+    }
+    .brand-pagination{
+      position: absolute;
+      left: 50%;
+      margin-left: -25%;
+      margin-top: 45px;
+      .pagination-num{
+        float: left;
+        li{
+          width: 35px;
+          height: 35px;
+          float: left;
+          border-top: 1px solid #d1dae8;
+          border-left: 1px solid #d1dae8;
+          border-bottom: 1px solid #d1dae8;
+          font-size: 14px;
+          text-align: center;
+          line-height: 34px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        li:nth-last-child(1){
+          border-right: 1px solid #d1dae8;
+        }
+      }
+      .go-href{
+        float: left;
+        padding-left: 30px;
+        .go-href-tip, .go-href-page{
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .go-href-input{
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          width: 34px;
+          height: 34px;
+          border: 1px solid #d1dae8;
+        }
+      }
+    }
+  }
+}

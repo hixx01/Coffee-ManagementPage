@@ -1,0 +1,57 @@
+/*
+* @Author: Helen
+* @Date:   2017-02-18 18:02:11
+* @Last Modified by:   Helen
+* @Last Modified time: 2017-03-02 02:57:02
+*/
+
+.activity {
+    font-size: 14px;
+    height: 1000px;
+    .activityTitle {
+        line-height: 72px;
+        color: #010101;
+        font-weight: normal;
+        border-bottom: 1px solid #e7e8eb;
+        padding-left: 30px;
+    }
+    .createActivity{
+        height:48px;
+        padding-left:22px;
+        padding-top: 18px;
+        border-bottom: 1px solid #e7e8eb;
+        .createActivityButton{
+            background-color: #44b549;
+            color: #fff;
+            line-height: 26px;
+            text-align: center;
+            height: 26px;
+            width: 92px;
+        }
+    }
+    .activityInforContainer{
+        height: 774px;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding-top: 43px;
+        .activityInforTable{
+            border: 1px solid #e7e8eb;
+            border-collapse: collapse;
+            margin: 0 auto;
+            td{
+                height: 56px;
+                padding: 0 40px;
+                border: 1px solid #e7e8eb;
+                line-height: 54px;
+                color: #010101;
+                text-align: center;
+                font-size: 12px;
+            }
+            .canClick{
+                color: #a1d7b0;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

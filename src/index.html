@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中食协后台管理</title>
+    <script>
+        (function BrowserType() {
+            var userAgent = navigator.userAgent; // 取得浏览器的userAgent字符串
+            var isOpera = userAgent.indexOf("Opera") > -1; // 判断是否Opera浏览器
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; // 判断是否IE浏览器
+            var isEdge = userAgent.indexOf("Windows NT 6.1; Trident/7.0;") > -1 && !isIE; // 判断是否IE的Edge浏览器
+            var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器
+            var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1; // 判断是否Safari浏览器
+            var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1; // 判断Chrome浏览器
+            var isLocationHref = false; // 是否跳转到浏览器版本过低页
+
+            if (isIE) { //判断是否为IE
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                if(fIEVersion == 7) {
+                    isLocationHref = true;
+                } else if(fIEVersion == 8) {
+                    isLocationHref = true;
+                } else if(fIEVersion == 9) {
+                    isLocationHref = true;
+                } else if(fIEVersion == 10) {
+                    isLocationHref = true;
+                } else if(fIEVersion == 11) {
+                    isLocationHref = true;
+                } else {
+                    isLocationHref = true; // IE版本过低
+                }
+            }
+            if (isFF) {
+                console.log('FF');
+            }
+            if (isOpera) {
+                console.log('Opera');
+            }
+            if (isSafari) {
+                console.log('Safari');
+            }
+            if (isChrome) {
+                console.log('Chrome');
+            }
+            if (isEdge) {
+                console.log('Edge');
+            }
+            console.log(isLocationHref);
+            console.log('-----------------------------------------------');
+
+            if (isLocationHref){
+                window.location.href = './browser-version.html';
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="./js/lib/foundation-datepicker.css">
+</head>
+<body>
+</body>
+<script src="./js/lib/jquery-2.1.4.min.js"></script>
+<script src="./js/lib/jquery-1.11.3.min.js"></script>
+<script src="./js/lib/sea.js"></script>
+<script src="./js/lib/seajs-text.js"></script>
+<script src="./js/lib/handlebars.min.js"></script>
+<script src="./js/lib/foundation-datepicker.js"></script>
+<script src="./js/lib/foundation-datepicker.zh-CN.js"></script>
+<script src="./js/lib/moment.min.js"></script>
+<script src="./js/lib/daterangepicker.js"></script>
+<script>
+    seajs.config({
+        base: './js/'
+    });
+    seajs.use('entry.js');
+</script>
+</html>
