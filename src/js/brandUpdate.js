@@ -1,6 +1,3 @@
-/**
- * Created by Weil on 2017/2/19.
- */
 ;(function () {
     var Model = {
         name: '', // 品牌名称

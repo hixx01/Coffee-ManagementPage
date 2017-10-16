@@ -1,6 +1,3 @@
-/**
- * The Sea.js plugin for loading text resources such as template, json etc
- */
 
 var global = window
 var plugins = {}

@@ -1,5 +1,5 @@
 <div class="activity">
-    <h3 class="activityTitle">活动管理</h3>
+    <h3 class="activityTitle"></h3>
     <div class="createActivity">
         <div class="createActivityButton">新建</div>
     </div>

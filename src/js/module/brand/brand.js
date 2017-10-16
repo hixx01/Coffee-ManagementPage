@@ -230,16 +230,14 @@ define(function (require, exports, module) {
 
         }
 
-        // 给详情页面的回调函数 用来获取详情页面传来的数据
         function detailSave (detailInfo) {
             console.log(detailInfo);
         }
 
-        // 品牌管理 调用品牌管理的详情页模块
         var brandDetail = require('./brandDetail.js');
         $('.specific-brand').on('click', function () {
             var $data_id = $(this).attr('data_id');
-            brandDetail(1, $data_id, detailSave); // 需要传入品牌ID
+            brandDetail(1, $data_id, detailSave);
         });
     };
 });

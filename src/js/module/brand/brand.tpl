@@ -1,12 +1,12 @@
 <div class="brand">
     <header class="brand-header">
-        <p class="brand-manage">全平台管理</p>
-        <p class="all-brand">全部品牌</p>
+        <p class="brand-manage"></p>
+        <p class="all-brand"></p>
     </header>
     <div class="classification-query clearfix">
         <select class="classification-select"></select>
         <div class="search-box clearfix">
-            <input type="text" value="" placeholder="品牌查询">
+            <input type="text" value="" placeholder="">
             <i class="iconfont icon-sousuo_sousuo"></i>
         </div>
     </div>

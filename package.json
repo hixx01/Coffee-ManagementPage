@@ -1,5 +1,5 @@
 {
-  "name": "cafia-mng",
+  "name": "coffee",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,6 @@
     "zip": "gulp zip",
     "lint": "eslint './src/**/*.+(js)'",
     "lint-fix": "eslint './src/**/*.+(js)' --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@git.oschina.net:CaptainBra/CNFIA-ManagementPage.git"
   },
   "author": "",
   "license": "ISC",

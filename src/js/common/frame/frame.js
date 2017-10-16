@@ -7,63 +7,63 @@ define(function (require, exports, module) {
 
     var menuInfo = [
         {
-            name: '活动管理',
+            name: '',
             id: 1,
             className: 'icon-huodong2',
             subMenu: [
                 {
-                    name: '活动管理',
+                    name: '',
                     id: 11
                 }
             ]
         },
         {
-            name: '品牌管理',
+            name: '',
             id: 2,
             className: 'icon-icon4',
             subMenu: [
                 {
-                    name: '全品牌管理',
+                    name: '',
                     id: 21
                 }
             ]
         },
         {
-            name: '抽奖管理',
+            name: '',
             id: 3,
             className: 'icon-lottery',
             subMenu: [
                 {
-                    name: '奖项管理',
+                    name: '',
                     id: 31
                 },
                 {
-                    name: '中奖详情',
+                    name: '',
                     id: 32
                 }
             ]
         },
         {
-            name: '官媒',
+            name: '',
             id: 4,
             subMenu: [
                 {
-                    name: '官媒管理',
+                    name: '',
                     id: 41
                 }
             ]
         },
         {
-            name: '设置管理员',
+            name: '',
             id: 5,
             className: 'icon-guanliyuan',
             subMenu: [
                 {
-                    name: '模块管理员',
+                    name: '',
                     id: 51
                 },
                 {
-                    name: '品牌管理员',
+                    name: '',
                     id: 52
                 }
             ]

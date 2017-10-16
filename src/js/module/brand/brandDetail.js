@@ -1,5 +1,5 @@
 define(function(require, exports, module) {
-    module.exports = function(activityId,brandId, detailSave) { // id 是品牌列表页面传入进来的
+    module.exports = function(activityId,brandId, detailSave) {
         var tplStr = require('./brandDetail.tpl');
         var tpl = Handlebars.compile(tplStr);
         var util = require('../../util.js');//引进封装的ajax

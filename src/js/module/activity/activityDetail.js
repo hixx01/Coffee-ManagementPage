@@ -1,6 +1,4 @@
-/**
- * Created by Administrator on 2017/2/26.
- */
+
 define(function (require, exports, module) {
     module.exports = function (activityId,detailSave) {
         var tplStr = require('./activityDetail.tpl');
@@ -432,8 +430,8 @@ define(function (require, exports, module) {
         //添加分类图片生成预览，若未上传图片会有错误提示
         $('#add-classification-logo').on('change', function() {
             var fileUp = document.getElementById('add-classification-logo');
-            var sendForm = new FormData();
-            var xhr = new XMLHttpRequest();
+            var sendForm = new Formta();
+            var xhr = new Xquest();
             sendForm.append('uploadImgs',fileUp.files[0]);
             xhr.open('POST',changeImgUrl, true);
             xhr.send(sendForm);
